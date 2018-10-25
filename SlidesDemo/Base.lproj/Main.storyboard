@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlidesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMd-MR-ibQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muir" translatesAutoresizingMaskIntoConstraints="NO" id="pNM-1T-Pxa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muirTent" translatesAutoresizingMaskIntoConstraints="NO" id="x6w-r8-E6w">
+                                        <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muirThree" translatesAutoresizingMaskIntoConstraints="NO" id="pvX-2J-RJn">
+                                        <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muirFour" translatesAutoresizingMaskIntoConstraints="NO" id="Kb2-2r-5BT">
+                                        <rect key="frame" x="1125" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Kb2-2r-5BT" secondAttribute="bottom" id="0hZ-dt-Uk0"/>
+                                    <constraint firstItem="pvX-2J-RJn" firstAttribute="width" secondItem="nMd-MR-ibQ" secondAttribute="width" id="2fv-bS-3Wo"/>
+                                    <constraint firstItem="x6w-r8-E6w" firstAttribute="height" secondItem="nMd-MR-ibQ" secondAttribute="height" id="Bm3-u7-iuk"/>
+                                    <constraint firstItem="pvX-2J-RJn" firstAttribute="height" secondItem="nMd-MR-ibQ" secondAttribute="height" id="D9i-80-JaW"/>
+                                    <constraint firstItem="Kb2-2r-5BT" firstAttribute="width" secondItem="nMd-MR-ibQ" secondAttribute="width" id="Go5-L9-Zc2"/>
+                                    <constraint firstItem="Kb2-2r-5BT" firstAttribute="top" secondItem="nMd-MR-ibQ" secondAttribute="top" id="HSe-jJ-q8y"/>
+                                    <constraint firstAttribute="bottom" secondItem="pNM-1T-Pxa" secondAttribute="bottom" id="JyA-pn-GXQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="x6w-r8-E6w" secondAttribute="bottom" id="LuM-mK-qHP"/>
+                                    <constraint firstItem="x6w-r8-E6w" firstAttribute="width" secondItem="nMd-MR-ibQ" secondAttribute="width" id="Rvd-7J-Eoa"/>
+                                    <constraint firstItem="pNM-1T-Pxa" firstAttribute="height" secondItem="nMd-MR-ibQ" secondAttribute="height" id="Uy9-iC-7AM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kb2-2r-5BT" secondAttribute="trailing" id="eFQ-WO-GG4"/>
+                                    <constraint firstItem="Kb2-2r-5BT" firstAttribute="leading" secondItem="pvX-2J-RJn" secondAttribute="trailing" id="eN6-9N-lcf"/>
+                                    <constraint firstAttribute="bottom" secondItem="pvX-2J-RJn" secondAttribute="bottom" id="fDK-Wd-xs3"/>
+                                    <constraint firstItem="Kb2-2r-5BT" firstAttribute="height" secondItem="nMd-MR-ibQ" secondAttribute="height" id="fRh-ha-GtT"/>
+                                    <constraint firstItem="pNM-1T-Pxa" firstAttribute="top" secondItem="nMd-MR-ibQ" secondAttribute="top" id="jSm-KA-va1"/>
+                                    <constraint firstItem="pNM-1T-Pxa" firstAttribute="leading" secondItem="nMd-MR-ibQ" secondAttribute="leading" id="ki3-M2-oBF"/>
+                                    <constraint firstItem="pvX-2J-RJn" firstAttribute="leading" secondItem="x6w-r8-E6w" secondAttribute="trailing" id="mSk-jw-BuO"/>
+                                    <constraint firstItem="pvX-2J-RJn" firstAttribute="top" secondItem="nMd-MR-ibQ" secondAttribute="top" id="mqd-SE-aT7"/>
+                                    <constraint firstItem="x6w-r8-E6w" firstAttribute="leading" secondItem="pNM-1T-Pxa" secondAttribute="trailing" id="n59-Zv-peC"/>
+                                    <constraint firstItem="x6w-r8-E6w" firstAttribute="top" secondItem="nMd-MR-ibQ" secondAttribute="top" id="tjP-LA-9Ot"/>
+                                    <constraint firstItem="pNM-1T-Pxa" firstAttribute="width" secondItem="nMd-MR-ibQ" secondAttribute="width" id="xwR-hG-QUK"/>
+                                </constraints>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="VLU-2r-nqs">
+                                <rect key="frame" x="160" y="610" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nMd-MR-ibQ" secondAttribute="bottom" id="akf-9C-vcC"/>
+                            <constraint firstAttribute="trailing" secondItem="nMd-MR-ibQ" secondAttribute="trailing" id="cBM-Jb-H42"/>
+                            <constraint firstItem="nMd-MR-ibQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="diY-Ks-zDK"/>
+                            <constraint firstItem="nMd-MR-ibQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e3g-il-bYp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VLU-2r-nqs" secondAttribute="bottom" constant="20" id="kOy-1M-6os"/>
+                            <constraint firstItem="VLU-2r-nqs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMm-mj-Fk6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="VLU-2r-nqs" id="Lap-F5-qnn"/>
+                        <outlet property="scrollView" destination="nMd-MR-ibQ" id="fmG-gi-LkX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="muir" width="4032" height="2268"/>
+        <image name="muirFour" width="4032" height="2268"/>
+        <image name="muirTent" width="2268" height="4032"/>
+        <image name="muirThree" width="4032" height="2268"/>
+    </resources>
+</document>
